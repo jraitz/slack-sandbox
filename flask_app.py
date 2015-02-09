@@ -36,4 +36,4 @@ def rndwiki():
 
 @app.route('/api/up', methods=['GET'])
 def up():
-	return jsonify({'text':'added a gold star for john'})
+	return jsonify({'text':'added a gold star for john.'})
