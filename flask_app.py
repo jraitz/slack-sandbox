@@ -33,3 +33,7 @@ def rndwiki():
     wikiRequest = "http://en.wikipedia.org/wiki/Special:Random"
     r = requests.get(wikiRequest)
     return "<p>The response url was %s.</p>" % r.url
+
+@app.route('/api/up', methods=['GET'])
+def up():
+	return jsonify({'text':'added a gold star for john'})
